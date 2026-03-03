@@ -1,0 +1,27 @@
+.instar-inner{
+    h2.tit {
+        color: var(--primary);
+        font-size: 5.5rem;
+    }
+    p.txt {
+        font-family: 'Arima',serif;
+        font-size: 2rem;
+        font-style: italic;
+    }
+
+    .instar-list{
+        display: flex;
+        margin-top: 4rem;
+        li{
+            margin: auto;
+            a{
+                font-size: 0;
+                display: block;
+                width: 25rem;
+                height: 25rem;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}
