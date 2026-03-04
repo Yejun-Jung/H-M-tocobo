@@ -25,7 +25,6 @@ const Footer = () => {
             ))}
           </ul>
           <div className="footer-legal">
-            <p>{footerLegal.copyright}</p>
             <div className="legal-links">
               {footerLegal.links.map((item, i) => (
                 <a key={i} href={item.href}>

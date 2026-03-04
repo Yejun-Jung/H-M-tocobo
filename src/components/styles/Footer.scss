@@ -7,6 +7,7 @@ footer{
         justify-items: center;
         max-width: 172rem;
         gap: 5rem;
+        padding: 0 3rem;
         .left {
             flex: 1;
             h3 {
@@ -18,21 +19,17 @@ footer{
                 line-height: 2.5rem;
             }
             .footer-legal {
-                p {
-                    color: var(--primary);
-                    font-size: 1.2rem;
-                    padding: 3rem 0 6rem;
-                }
+                margin-top: 6.6rem;
                 .legal-links a {
                     display: inline-block;
-                    margin-left: 2rem;
+                    margin-right: 2.5rem;
                     font-size: 1.3rem;
                     color: #6f6f6f;
                 }
             }
         }
         .center {
-            flex: 2;
+            flex: 2.5;
             .foot-menus {
                 display: flex;
                 font-size: 1.5rem;
@@ -48,7 +45,7 @@ footer{
             }
         }
         .right {
-            flex: 1;
+            flex: 0.5;
             .cus-wrap {
                 .cs-box a {
                     display: block;

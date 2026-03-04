@@ -1,5 +1,5 @@
 import React from "react";
-import accessory from "../util/accessory";
+import accessoryData from "../util/accessory";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -19,12 +19,14 @@ const Accessory = () => {
             악세서리 둘러보기
           </a>
         </div>
+      </div>
 
-        <div className="slider-wrap">
+      <div className="slider-full-wrap">
+        <div className="in">
           <Swiper
             modules={[Navigation]}
             slidesPerView={3.5}
-            spaceBetween={30}
+            spaceBetween={20}
             loop={true}
             navigation={{
               prevEl: ".nav-prev",
@@ -32,27 +34,25 @@ const Accessory = () => {
             }}
             className="accessory-slider"
           >
-            {accessory.map((sl) => (
+            {accessoryData.map((sl) => (
               <SwiperSlide key={sl.id}>
-                <a
-                  href={sl.link}
+                <button
                   className="slide-link"
                   style={{ backgroundImage: `url(${sl.image})` }}
                 >
-                  <span className="hidden-text">{sl.alt || sl.id}</span>
-                </a>
+                </button>
               </SwiperSlide>
             ))}
           </Swiper>
+        </div>
 
-          <div className="slider-nav">
-            <button className="nav-prev">
-              <img src="/img/L_Arrow.png" alt="L_Arrow" />
-            </button>
-            <button className="nav-next">
-              <img src="/img/R_Arrow.png" alt="R_Arrow" />
-            </button>
-          </div>
+        <div className="slider-nav">
+          <button className="nav-prev">
+            <img src="/img/L_Arrow.png" alt="L_Arrow" />
+          </button>
+          <button className="nav-next">
+            <img src="/img/R_Arrow.png" alt="R_Arrow" />
+          </button>
         </div>
       </div>
     </div>
