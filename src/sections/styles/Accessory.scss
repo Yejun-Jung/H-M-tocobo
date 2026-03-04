@@ -1,37 +1,104 @@
-.skincare-inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    h2.tit {
-        color: var(--secondary);
-    }
-    a.btn {
-        background: var(--s-gradient);
-        &:hover {
-            color: var(--secondary);
-        }
-    }
-    .slider-wrap{
-        width: 75rem;
-        height: 53rem;
-        // background-color: salmon;
-        position: relative;
-        // border: 1px solid #000;
-        .in {
-            position: absolute;
-            width: 200%;
-            height: 100%;
-            // background-color: rgba(244, 165, 96, 0.432);
+.accessory-section {
+  position: relative;
+  padding: 8rem 0;
+  z-index: 1;
+}
 
+.accessory-inner {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 2rem;
 
-            .skincare-slider{
-                height: 100%;
-                a{
-                    display: block;
-                    height: 100%;
-                    font-size: 0;
-                }
-            }
-        }
-    }
+  .t-wrap .tit {
+  font-size: 5.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.t-wrap .txt {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+}
+}
+
+.top-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+}
+
+.btn-light {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 3.8rem;
+  background-color: #DCDCDC;
+  font-size: 1.7rem;
+  border-radius: 5rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-light:hover {
+  background-color: #d0d0d0;
+}
+
+.slider-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.accessory-slider {
+  width: 100%;
+  height: 60rem;
+}
+
+.swiper-slide {
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.slide-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hidden-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.slider-nav {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.slider-nav button {
+  width: 8rem;
+  height: 3rem;
+  background-color: #c4c4c4;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.slider-nav button:hover {
+  background-color: #a0a0a0;
 }

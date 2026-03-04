@@ -12,7 +12,7 @@ footer{
                 margin-bottom: 4rem;
             }
             .foot-list-1 li {
-                color: #5b5b5b;
+                color: #000;
                 font-size: 1.3rem;
                 line-height: 2.5rem;
             }
@@ -34,9 +34,10 @@ footer{
             flex: 2;
             .foot-menus {
                 display: flex;
+                font-size: 1.5rem;
+                color: #6f6f6f;
                 &>div {
                     flex: 1;
-                    
                 }
             }
         }

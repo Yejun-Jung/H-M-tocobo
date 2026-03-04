@@ -13,6 +13,7 @@ import FixedTopBtn from "./components/FixedTopBtn";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Accessory from "./sections/Accessory";
 
 function App() {
   const [topBanner, setTopBanner] = useState("");
@@ -57,8 +58,8 @@ function App() {
         <section id="instagram" className="section">
           <Instagram />
         </section>
-        <section id="skincare" className="section">
-          <SkinCare />
+        <section id="accessory" className="section">
+          <Accessory />
         </section>
       </main>
       <Footer />

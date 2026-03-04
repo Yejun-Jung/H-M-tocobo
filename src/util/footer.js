@@ -5,24 +5,23 @@ import { RiKakaoTalkFill } from "react-icons/ri";
 
 // 로고
 export const logoData = {
-  src: img("logo.svg"),
+  src: img("footer_logo.svg"),
   alt: "TOCOBO 로고",
   href: "/",
 };
 
 // 회사 정보
 export const companyData = [
-  "주식회사 픽톤  대표 : 이병훈",
-  "주소 : 03966 서울특별시 마포구 월드컵북로15길 45 (성산동)",
-  "사업자등록번호 : 196-81-02410 [사업자정보확인]",
-  "통신판매업신고 : 제2021-서울마포-2994호 개인정보보호책임자 : 안주영",
-  "TEL : 02-6352-2410  E-MAIL : help@thepicton.com",
-  "마케팅문의 : 마케팅팀 mkt@thepicton.com",
-  "수출문의 : 해외영업팀 sales1@thepicton.com",
-  "특판&대량구매문의 : 국내영업팀 sales@thepicton.com",
+  "본 사이트의 콘텐츠는 저작권 보호를 받고 있는",
+  "H&M Hennes & Mauritz AB의 자산입니다.",
+  "법인명: 에이치앤엠헤네스 앤 모리츠 주식회사",
+  "통신판매업 신고번호 : 2022-서울강남-01184",
+  "사업자등록번호: 220-87-83339",
+  "대표자: 아담 칼슨, 선보라미, 아네타 포쿠친스카",
+  "주소: 서울특별시 강남구 영동대로 421, 9층 삼탄빌딩 (대치동) 06182",
+  "대표번호: 080-822-0220 info.kr@hm.com ",
 ];
 export const footerLegal = {
-  copyright: "COPYRIGHT© 주식회사 픽톤 2021 TOCOBO. ALL RIGHT RESERVED.",
   links: [
     { label: "이용약관", href: "/terms" },
     { label: "개인정보처리방침", href: "/privacy" },
@@ -41,35 +40,44 @@ export const customerCenterData = {
 // 메뉴
 export const footerMenus = [
   {
-    title: "Brand",
+    title: "카테고리",
     items: [
-      { label: "Brand Story", href: "/brand-story" },
-      { label: "Collection", href: "/collection" },
+      { label: "WOMEN", href: "/category/women" },
+      { label: "MEN", href: "/category/men" },
+      { label: "KIDS", href: "/category/kids" },
+      { label: "HOME", href: "/category/home" },
+      { label: "기프트카드", href: "/category/giftcard" },
     ],
   },
   {
-    title: "Shop",
+    title: "기업정보",
     items: [
-      { label: "All Product", href: "/shop" },
-      { label: "MakeUp", href: "/shop/makeup" },
-      { label: "Cleansing", href: "/shop/cleansing" },
-      { label: "Skincare", href: "/shop/skincare" },
-      { label: "Sun", href: "/shop/sun" },
-      { label: "Lip", href: "/shop/lip" },
-      { label: "Set/Etc", href: "/shop/etc" },
+      { label: "H&M 채용정보", href: "/career" },
+      { label: "H&M 회사소개", href: "/about" },
+      { label: "H&M GROUP 지속가능성", href: "/sustainability" },
+      { label: "언론", href: "/press" },
+      { label: "IR 정보", href: "/ir" },
+      { label: "기업지배구조", href: "/governance" },
     ],
   },
   {
-    title: "Promotion",
-    items: [{ label: "Promotion", href: "/promotion" }],
+    title: "고객지원",
+    items: [
+      { label: "고객 서비스", href: "/customer-service" },
+      { label: "내 계정", href: "/my-account" },
+      { label: "매장 찾기", href: "/store-locator" },
+      { label: "개인정보 처리방침", href: "/privacy" },
+      { label: "문의하기", href: "/contact" },
+      { label: "안전한 쇼핑", href: "/safe-shopping" },
+      { label: "COOKIE SETTINGS", href: "/cookie-settings" },
+    ],
   },
   {
-    title: "Community",
+    title: "멤버십 혜택",
     items: [
-      { label: "Notice", href: "/notice" },
-      { label: "FAQ", href: "/faq" },
-      { label: "Review", href: "/review" },
-      { label: "1:1 CS", href: "/cs" },
+      { label: "신규 회원 10% 할인", href: "/membership-new" },
+      { label: "멤버십 가입하기", href: "/membership-join" },
+      { label: "멤버십 정보", href: "/membership-info" },
     ],
   },
 ];
