@@ -1,9 +1,10 @@
 footer{
-    border-top: .1rem solid var(--primary);
+    border-top: .1rem solid var(--fg);
     padding: 7rem 0 5rem;
     .footer-inner {
         display: flex;
         justify-content: space-between;
+        justify-items: center;
         max-width: 172rem;
         gap: 5rem;
         .left {
@@ -13,7 +14,7 @@ footer{
             }
             .foot-list-1 li {
                 color: #000;
-                font-size: 1.3rem;
+                font-size: 1.6rem;
                 line-height: 2.5rem;
             }
             .footer-legal {
@@ -36,6 +37,11 @@ footer{
                 display: flex;
                 font-size: 1.5rem;
                 color: #6f6f6f;
+                h4 {
+                    font-family: "Circular Std", "Noto Sans KR";
+                    font-style: normal;
+                    color: var(--fg);
+                }
                 &>div {
                     flex: 1;
                 }
@@ -47,7 +53,7 @@ footer{
                 .cs-box a {
                     display: block;
                     font-size: 3rem;
-                    color: var(--primary);
+                    color: var(--fg);
                     margin-bottom: 1.7rem;
                     font-weight: 400;
                 }
@@ -59,11 +65,11 @@ footer{
                 .talk-btn1 {
                     margin-top: 2rem;
                     display: inline-block;
-                    border: .1rem solid var(--primary);
+                    border: .1rem solid var(--fg);
                     padding: 1.4rem 7.2rem 1.3rem;
                     border-radius: 4.6rem;
                     font-size: 1.3rem;
-                    color: var(--primary);
+                    color: var(--fg);
                 }
             }
 
@@ -76,10 +82,9 @@ footer{
             }
         }
         h4 {
-                color: var(--primary);
-                font-family: 'Source Serif Pro', serif;
+                color: var(--fg);
+                font-family: "Circular Std", "Noto Sans KR";
                 font-size: 1.8rem;
-                font-style: italic;
                 margin-bottom: 2.5rem;
             }
             .sns-links {

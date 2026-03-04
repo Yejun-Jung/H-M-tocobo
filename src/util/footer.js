@@ -30,10 +30,10 @@ export const footerLegal = {
 };
 // 고객센터
 export const customerCenterData = {
-  title: "Customer Center",
-  tel: { value: "02-6352-2410", href: "tel:0263522410" },
-  hours: "AM 10:00 - PM 5:00 (Lunch 12:00 - 13:00)",
-  notice: "토, 일요일 및 공휴일 휴무",
+  title: "전화 연락 :",
+  tel: { value: "080-822-0220", href: "tel:0808220220" },
+  hours: "월요일 - 금요일 : 10am - 7pm",
+  notice: "토요일 - 일요일 : 휴무",
   talk: { label: "1:1 TALK", href: "#" },
 };
 
