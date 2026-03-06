@@ -40,6 +40,20 @@ const Collection = () => {
         pagination={{
           type: "progressbar",
         }}
+        breakpoints={{
+          320: {
+            slidesPerView: 1.2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2.2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 2.5,
+            spaceBetween: 30,
+          },
+        }}
         modules={[Pagination, Navigation]}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         className="collection-slider"

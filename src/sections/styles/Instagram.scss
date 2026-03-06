@@ -1,26 +1,34 @@
-.instar-inner{
+.instar-inner {
     h2.tit {
         color: var(--primary);
         font-size: 5.5rem;
     }
     p.txt {
-        font-family: 'Arima',serif;
+        font-family: 'Arima', serif;
         font-size: 2rem;
         font-style: italic;
     }
 
-    .instar-list{
+    .instar-list {
         display: flex;
         margin-top: 4rem;
-        li{
+
+        li {
             margin: auto;
-            a{
+            a {
                 font-size: 0;
                 display: block;
                 width: 25rem;
                 height: 25rem;
                 background-size: cover;
                 background-position: center;
+
+                @media screen and (max-width: 1024px) {
+                    width: 16rem;
+                    height: 16rem;
+                    display: flex;
+                    gap: 1rem;
+                }
             }
         }
     }

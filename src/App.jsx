@@ -6,18 +6,18 @@ import Review from "./sections/Review";
 import Footer from "./components/Footer";
 import Follow from "./sections/Follow";
 import Collection from "./sections/Collection";
-import SkinCare from "./sections/Accessory";
+import Accessory from "./sections/Accessory";
 import Instagram from "./sections/Instagram";
 import TopBanner from "./components/TopBanner";
 import FixedTopBtn from "./components/FixedTopBtn";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Accessory from "./sections/Accessory";
 
 function App() {
   const [topBanner, setTopBanner] = useState("");
   const [isScrolled, setIsScrolled] = useState(false);
+  const [mNavOpen, setMNavOpen] = useState(false);
 
   useEffect(() => {
     AOS.init({
@@ -44,7 +44,11 @@ function App() {
     >
       <FixedTopBtn />
       <TopBanner onClick={upTopBanner} />
-      <Header />
+      <Header
+        mNavOpen={mNavOpen}
+        onNavOpen={() => setMNavOpen(true)}
+        onNavClose={() => setMNavOpen(false)}
+      />
       <main>
         <section id="hero" className="section">
           <Hero />

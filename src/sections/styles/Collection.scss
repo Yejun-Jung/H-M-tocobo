@@ -10,10 +10,13 @@
         font-size: 1.9rem;
         color: var(--primary);
     }
-    }
 
     .collection-slider {
         margin-top: 6.8rem;
+
+        @media screen and (max-width:1280px) {
+            width: clamp(90rem, 90vw, 110rem);
+        }
 
         .info-tit {
             display: inline-flex;
@@ -26,12 +29,20 @@
             color: var(--primary);
             font-size: 1.3rem;
             font-weight: bold;
+
+            @media screen and (max-width:1280px) {
+                height: 3rem;
+            }
         }
         .name {
             margin: 2rem 0 1.3rem;
             font-size: 2rem;
             color: var(--text);
             font-family: 'Source Serif Pro', serif;
+
+            @media screen and (max-width:1280px) {
+                margin: 1rem 0 0;
+            }
         }
         .k-name {
             color: var(--text);
@@ -60,6 +71,11 @@
             justify-content: center;
             margin: 2.5rem auto 0;
 
+            @media screen and (max-width:1280px) {
+                width: clamp(25rem, 26vw, 30rem);
+                height: clamp(25rem, 26vw, 30rem);
+            }
+
             img {
                 width: 110%;
             }
@@ -69,8 +85,14 @@
             position: static;
             margin: 4.8rem auto 0;
             width: 95%;
-            background-color: var(-bg);
+            background-color: var(--bg);
             height: .2rem;
+
+            @media screen and (max-width:1280px) {
+                margin: 3rem 0;
+                width: 90vw;
+            }
+
             .swiper-pagination-progressbar-fill {
                 background-color: var(--fg);
             }
@@ -101,3 +123,4 @@
         width: 70px;
         height: 70px;
     }
+}

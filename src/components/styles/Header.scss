@@ -1,10 +1,11 @@
 header {
     position: fixed;
-    top:4rem;   
+    top: 4rem;   
     width: 100%;
     z-index: 5;
     height: 10.5rem;
     transition: all .3s;
+
     .inner {
         max-width: 185rem;
         padding: 0 3rem;
@@ -12,9 +13,22 @@ header {
         justify-content: space-between;
         align-items: center;
 
+        .mob-nav-btn {
+            display: none;
+            
+            @media screen and (max-width: 1250px) {
+                display: block;
+            }
+        }
+
         .nav-list {
             display: flex;
             gap: 3rem;
+
+            @media screen and (max-width: 1250px) {
+                display: none;
+            }
+
             a {
                 display: block;
                 font-size: 1.8rem;
@@ -22,6 +36,7 @@ header {
                 color: var(--fg);
                 padding: 0 .5rem;
                 position: relative;
+
                 &::after {
                     display: block;
                     position: absolute;
@@ -32,20 +47,53 @@ header {
                     left: 0;
                     transition: width .3s ease;
                 }
+
                 &:hover::after {
                     width: 100%;
                 }
             }
         }
+
         h1.tit {
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
         }
+
         .util-list {
             display: flex;
             gap: 3rem;
+
+            li {
+                @media screen and (max-width: 1250px) {
+                    a {
+                        display: block;
+                        width: 2.5rem;
+                        position: relative;
+                        transform: translateX(-1rem);
+
+                        &::after {
+                            display: block;
+                            content: "0";
+                            width: 2rem;
+                            height: 2rem;
+                            background-color: var(--primary);
+                            text-align: center;
+                            align-content: center;
+                            border-radius: 50%;
+                            color: var(--bg);
+                            position: absolute;
+                            right: -2rem;
+                            top: 0;
+                        }
+                    }
+
+                    &:not(:last-child) {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }

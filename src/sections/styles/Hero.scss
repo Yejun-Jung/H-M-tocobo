@@ -26,6 +26,11 @@
       box-sizing: border-box;
       height: 100%;
 
+      @media screen and (max-width: 1024px) {
+        align-items: flex-end;
+        padding-bottom: 20rem;
+      }
+
       .t-wrap {
         margin: 0;
       }
