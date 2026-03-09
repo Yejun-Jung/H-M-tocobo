@@ -31,6 +31,12 @@ const instar = [
     alt: "벽을 배경으로 가죽 점퍼를 입고 서 있는 모델 화보 이미지",
     link: "/shop",
   },
+  {
+    id: 5,
+    image: img("instar5.jpg"),
+    alt: "벽을 배경으로 가죽 점퍼를 입고 서 있는 모델 화보 이미지",
+    link: "/shop",
+  },
 ];
 
 
