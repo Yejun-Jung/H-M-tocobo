@@ -8,18 +8,30 @@
         @media screen and (max-width:1024px) {
             font-size: 4.5rem;
         }
+        @media screen and (max-width:765px) {
+            font-size: 3rem;
+        }
     }
     p.txt {
         margin-top: 1.7rem;
         font-size: 1.9rem;
         color: var(--primary);
+
+         @media screen and (max-width:765px) {
+            font-size: 1.5rem;
+        }
     }
 
     .collection-slider {
         margin-top: 6.8rem;
+        width: 100%;
 
         @media screen and (max-width:1280px) {
-            width: clamp(90rem, 90vw, 110rem);
+            width: clamp(30rem, 90vw, 110rem);
+        }
+
+        @media screen and (max-width:765px) {
+            width: 100%;
         }
 
         .info-tit {
@@ -93,8 +105,12 @@
             height: .2rem;
 
             @media screen and (max-width:1280px) {
-                margin: 3rem 0;
-                width: 90vw;
+                margin: 3rem auto;
+                width: 90%;
+            }
+
+            @media screen and (max-width:765px) {
+                width: 85%;
             }
 
             .swiper-pagination-progressbar-fill {

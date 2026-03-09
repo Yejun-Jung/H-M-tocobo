@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   logoData,
   companyData,
@@ -10,6 +10,8 @@ import {
 import "./styles/Footer.scss";
 
 const Footer = () => {
+  const [isCsOpen, setIsCsOpen] = useState(false);
+
   return (
     <footer>
       <div className="inner footer-inner">
@@ -34,6 +36,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        
         <div className="center">
           <div className="foot-menus">
             {footerMenus.map((menu, i) => (
@@ -50,10 +53,11 @@ const Footer = () => {
             ))}
           </div>
         </div>
+        
         <div className="right">
-          <div className="cus-wrap">
-            <h4>{customerCenterData.title}</h4>
-            <div className="hidden">
+          <div className="cus-wrap" onClick={() => setIsCsOpen(!isCsOpen)}>
+            <h4 className={isCsOpen ? "open" : ""}>{customerCenterData.title}</h4>
+            <div className={`hidden ${isCsOpen ? "show" : ""}`}>
               <p className="cs-box">
                 <a href={customerCenterData.tel.href}>
                   {customerCenterData.tel.value}

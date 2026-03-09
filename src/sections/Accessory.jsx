@@ -25,12 +25,29 @@ const Accessory = () => {
         <div className="in">
           <Swiper
             modules={[Navigation]}
-            slidesPerView={3.5}
-            spaceBetween={20}
             loop={true}
+            observer={true}
+            observeParents={true}
             navigation={{
               prevEl: ".nav-prev",
               nextEl: ".nav-next",
+            }}
+            breakpoints={{
+              0: {
+                slidesPerView: 1.3,
+                centeredSlides: false,
+                spaceBetween: 15,
+              },
+              766: {
+                slidesPerView: 2.5,
+                centeredSlides: true,
+                spaceBetween: 20,
+              },
+              1025: {
+                slidesPerView: 3.5,
+                centeredSlides: false,
+                spaceBetween: 20,
+              },
             }}
             className="accessory-slider"
           >
@@ -39,8 +56,7 @@ const Accessory = () => {
                 <button
                   className="slide-link"
                   style={{ backgroundImage: `url(${sl.image})` }}
-                >
-                </button>
+                ></button>
               </SwiperSlide>
             ))}
           </Swiper>

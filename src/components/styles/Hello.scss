@@ -20,6 +20,10 @@
             width: 44rem;
             height: 44rem;
         }
+        @media screen and (max-width:765px) {
+            width: 35rem;
+            height: 35rem;
+        }
     }
 
     .t-wrap {
@@ -31,6 +35,22 @@
         h2.tit {
             color: var(--primary);
             margin: 3rem 0 2rem;
+
+            @media screen and (max-width:765px) {
+            font-size: 3rem;
+        }
+        }
+        .txt-1 {
+            @media screen and (max-width:765px) {
+            font-size: 1.6rem;
+        }
+        }
+        .btn {
+            @media screen and (max-width:765px) {
+                width: 13rem;
+                height: 4.5rem;
+            font-size: 1.4rem;
+        }
         }
     }
 }
