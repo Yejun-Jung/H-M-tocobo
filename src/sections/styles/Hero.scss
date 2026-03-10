@@ -3,7 +3,11 @@
   position: relative;
 
   @media screen and (max-width: 1024px) {
-    height: clamp(60rem, 100vw, 90rem);
+    height: 500px;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 520px;
   }
 
   h2.tit {
@@ -20,6 +24,7 @@
   }
 
   .hero-slide {
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -41,7 +46,14 @@
       }
 
       @media screen and (max-width: 1024px) {
-        padding-bottom: 15rem;
+        padding-bottom: 80px;
+      }
+
+      @media screen and (max-width: 768px) {
+        align-items: flex-end;
+        padding-bottom: 50px;
+        position: relative;
+        z-index: 2;
       }
 
       .t-wrap {
@@ -55,7 +67,11 @@
         @media screen and (max-width: 1024px) {
           font-size: 1.6rem;
           margin-top: 2rem;
-          margin-bottom: 3rem;
+          margin-bottom: 1rem;
+        }
+
+        @media screen and (max-width: 765px) {
+          margin-bottom: 5rem;
         }
       }
       
@@ -68,8 +84,15 @@
         transition: all 0.3s;
         
         @media screen and (max-width: 1024px) {
-          padding: 1.2rem 3rem;
-          font-size: 1.4rem;
+          width: 13rem;
+          height: 4rem;
+          margin-bottom: 3rem;
+          font-size: 1rem;
+          padding: 1rem;
+        }
+
+        @media screen and (max-width: 765px) {
+          display: none;
         }
       }
     }
@@ -78,6 +101,10 @@
       h2.tit { color: var(--main-slider01-tit); }
       p.txt { color: var(--main-slider01-sub); }
       a.btn { background: var(--main-slider01-tit); }
+      
+      @media screen and (max-width: 765px) {
+        background-position: 70% 50%;
+      }
     }
 
     &.hs-2 {
@@ -86,6 +113,10 @@
       a.btn { 
         background: #1F3238; 
         &:hover { color: var(--main-slider02-tit); }
+      }
+      
+      @media screen and (max-width: 765px) {
+        background-position: 80% 50%;
       }
     }
 
@@ -98,6 +129,10 @@
           &:hover { color: var(--main-slider03-tit); }
         }
       }
+      
+      @media screen and (max-width: 765px) {
+        background-position: 50% 50%;
+      }
     }
 
     &.hs-4 {
@@ -106,6 +141,13 @@
       a.btn { 
         background: #050E15;
         &:hover { color: var(--main-slider04-tit); }
+      }
+      
+      @media screen and (max-width: 765px) {
+        h2.tit {
+          color: #767F86;
+        }
+        background-position: 80% 50%;
       }
     }
   }
@@ -120,8 +162,12 @@
     gap: 2rem;
 
     @media screen and (max-width: 1024px) {
-      bottom: 5rem;
+      bottom: 30px;
       gap: 1.5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      bottom: 20px;
     }
 
     .arr-prev,

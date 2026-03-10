@@ -12,6 +12,14 @@
             background-size: contain;
             background-position: center;
             border-radius: 13rem;
+            @media screen and (max-width:1024px) {
+                width: 13rem;
+                height: 13rem;
+            }
+            @media screen and (max-width:765px) {
+                width: 10rem;
+                height: 10rem;
+            }
         }
         p {
             font-size: 1.5rem;

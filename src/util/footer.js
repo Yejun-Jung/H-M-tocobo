@@ -31,7 +31,7 @@ export const footerLegal = {
 };
 // 고객센터
 export const customerCenterData = {
-  title: "전화 연락 :",
+  title: "Customer Center",
   tel: { value: "080-822-0220", href: "tel:0808220220" },
   hours: "월요일 - 금요일 : 10am - 7pm",
   notice: "토요일 - 일요일 : 휴무",

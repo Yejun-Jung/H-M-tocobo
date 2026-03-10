@@ -133,9 +133,10 @@ footer {
                         justify-content: space-between;
                         align-items: center;
                         margin-bottom: 0;
+                        font-family: "Source Serif Pro", serif;
                         font-style: italic;
                         font-size: 1.5rem;
-                        font-weight: 400;
+                        font-weight: 600;
 
                         &::after {
                             content: '+';
