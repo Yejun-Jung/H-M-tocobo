@@ -24,7 +24,7 @@
         display: flex;
         justify-content: center;
         margin-top: 4rem;
-        gap: 1.5%;
+        gap: 1rem;
 
         @media screen and (max-width: 1000px) {
             flex-wrap: wrap;
@@ -40,7 +40,7 @@
             }
 
             @media screen and (max-width: 768px) {
-                width: 48%;
+                width: 45%;
             }
 
             a {

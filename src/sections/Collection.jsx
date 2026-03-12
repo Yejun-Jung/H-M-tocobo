@@ -42,15 +42,15 @@ const Collection = () => {
         }}
         breakpoints={{
           320: {
-            slidesPerView: 1.2,
+            slidesPerView: 1,
             spaceBetween: 10,
           },
           768: {
-            slidesPerView: 2.2,
+            slidesPerView: 2.5,
             spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 2.5,
+            slidesPerView: 3,
             spaceBetween: 30,
           },
         }}

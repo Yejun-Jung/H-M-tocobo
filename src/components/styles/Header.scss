@@ -6,12 +6,34 @@ header {
     height: 10.5rem;
     transition: all .3s;
 
+    @media screen and (max-width:1024px) {
+        height: 8.5rem;
+        
+    }
+    @media screen and (max-width:765px) {
+        height: 6.5rem;
+        
+    }
+
     .inner {
         max-width: 185rem;
         padding: 0 3rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media screen and (max-width:1024px) {
+            .tit img {
+                width: 5em;
+                height: 5rem;
+            }
+        }
+        @media screen and (max-width:765px) {
+            .tit img {
+                width: 4em;
+                height: 4rem;
+            }
+        }
 
         .mob-nav-btn {
             display: none;
