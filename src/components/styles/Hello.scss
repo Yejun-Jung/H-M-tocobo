@@ -28,7 +28,9 @@
 
     .t-wrap {
         text-align: center;
-        width: 63rem;
+        width: 100%;
+        max-width: 63rem;
+
         .txt-2 {
             color: var(--fg);
         }
@@ -37,17 +39,17 @@
             margin: 3rem 0 2rem;
 
             @media screen and (max-width:1024px) {
-            font-size: 4.5rem;
-        }
+                font-size: 4.5rem;
+            }
 
             @media screen and (max-width:765px) {
-            font-size: 3rem;
-        }
+                font-size: 3rem;
+            }
         }
         .txt-1 {
             @media screen and (max-width:765px) {
-            font-size: 1.6rem;
-        }
+                font-size: 1.6rem;
+            }
         }
         .btn {
             width: 18.3rem;
@@ -57,12 +59,12 @@
                 width: 13rem;
                 height: 4.5rem;
                 font-size: 1.4rem;
-        }
+            }
             @media screen and (max-width:765px) {
-            width: 13rem;
-             height: 4.5rem;
-            font-size: 1.4rem;
-        }
+                width: 13rem;
+                height: 4.5rem;
+                font-size: 1.4rem;
+            }
         }
     }
 }
