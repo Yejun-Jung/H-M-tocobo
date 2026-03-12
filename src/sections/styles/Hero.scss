@@ -2,7 +2,7 @@
   height: 90rem;
   position: relative;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1250px) {
     height: 500px;
   }
 
@@ -13,7 +13,7 @@
   h2.tit {
     font-size: 7.3rem;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1250px) {
       font-size: 5.5rem;
       line-height: 1.1;
     }
@@ -48,7 +48,7 @@
         padding-bottom: 20rem;
       }
 
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 1250px) {
         padding-bottom: 80px;
       }
 
@@ -67,7 +67,7 @@
         font-size: 2.1rem;
         margin-top: 4rem;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1250px) {
           font-size: 1.6rem;
           margin-top: 2rem;
           margin-bottom: 1rem;
@@ -87,7 +87,7 @@
         color: #fff;
         transition: all 0.3s;
         
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1250px) {
           width: 13rem;
           height: 4rem;
           margin-bottom: 3rem;
@@ -168,7 +168,7 @@
     align-items: center;
     gap: 2rem;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1250px) {
       bottom: 30px;
       gap: 1.5rem;
     }
@@ -187,7 +187,7 @@
       font-size: 0;
       cursor: pointer;
 
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 1250px) {
         width: 3.5rem;
         height: 1.2rem;
       }
@@ -203,7 +203,7 @@
       font-size: 0;
       color: #000;
 
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 1250px) {
         width: 4rem;
         height: 4rem;
       }
@@ -214,7 +214,7 @@
         left: 0;
         top: 0;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1250px) {
           font-size: 1.8rem;
         }
       }
@@ -225,7 +225,7 @@
         right: 0;
         bottom: 0;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1250px) {
           font-size: 1.8rem;
         }
       }
@@ -242,7 +242,7 @@
         transform: rotate(45deg) translate(-50%, -50%);
         transform-origin: 0 0;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1250px) {
           height: 40px;
         }
       }
