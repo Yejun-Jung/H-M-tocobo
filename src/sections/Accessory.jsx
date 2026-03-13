@@ -53,10 +53,11 @@ const Accessory = () => {
           >
             {accessoryData.map((sl) => (
               <SwiperSlide key={sl.id}>
-                <button
+                <a
+                  href={sl.link}
                   className="slide-link"
                   style={{ backgroundImage: `url(${sl.image})` }}
-                ></button>
+                ></a>
               </SwiperSlide>
             ))}
           </Swiper>

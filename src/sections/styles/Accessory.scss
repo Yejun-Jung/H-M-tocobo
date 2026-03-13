@@ -2,7 +2,7 @@
   position: relative;
   padding: 8rem 0;
   z-index: 1;
-  border-top: 1px solid #F0F0F0;
+  border-top: 1px solid #f0f0f0;
 
   @media screen and (max-width: 765px) {
     padding: 6rem 0 4rem;
@@ -42,7 +42,7 @@
         font-weight: 700;
         color: #000;
         margin-bottom: 1rem;
-        font-family: 'Circular Std', sans-serif;
+        font-family: "Circular Std", sans-serif;
 
         @media screen and (max-width: 1024px) {
           font-size: 4rem;
@@ -79,7 +79,7 @@
   align-items: center;
   justify-content: center;
   padding: 1.5rem 3.8rem;
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
   font-size: 1.7rem;
   border-radius: 5rem;
   font-weight: 600;
@@ -145,6 +145,8 @@
     background-color: transparent;
     cursor: pointer;
     transition: opacity 0.4s ease, visibility 0.4s ease;
+    user-select: none;
+    -webkit-user-drag: none;
 
     @media screen and (max-width: 1024px) {
       height: auto;
