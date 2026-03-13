@@ -74,7 +74,7 @@
         }
 
         @media screen and (max-width: 765px) {
-          font-size: 1rem;
+          font-size: 1.3rem;
           margin-bottom: 4rem;
         }
       }
@@ -118,7 +118,7 @@
       h2.tit { color: var(--main-slider02-tit); }
       p.txt { color: var(--main-slider02-sub); }
       a.btn { 
-        background: #1F3238; 
+        background: #40585f; 
         &:hover { color: var(--main-slider02-tit); }
       }
       
@@ -146,14 +146,11 @@
       h2.tit { color: var(--main-slider04-tit); }
       p.txt { color: var(--main-slider04-sub); }
       a.btn { 
-        background: #050E15;
+        background: #255675;
         &:hover { color: var(--main-slider04-tit); }
       }
       
       @media screen and (max-width: 765px) {
-        h2.tit {
-          color: #767F86;
-        }
         background-position: 80% 50%;
       }
     }
